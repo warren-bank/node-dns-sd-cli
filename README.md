@@ -54,7 +54,12 @@ options:
 
 #### Documentation:
 
+* [shape of `params` JSON Object](https://github.com/futomi/node-dns-sd#DnsSd-discover-method)
 * [common service strings](common-service-strings.md)
+
+#### Example:
+
+* [this test script](https://github.com/warren-bank/node-dns-sd-cli/blob/master/tests/run.sh) is a good introduction
 
 #### Legal:
 
