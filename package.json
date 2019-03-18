@@ -1,0 +1,23 @@
+{
+  "name": "@warren-bank/node-dns-sd-cli",
+  "version": "1.0.0",
+  "main": "",
+  "description": "Bonjour (DNS-SD) discovery/monitor command line tool.",
+  "author": "Warren Bank (https://github.com/warren-bank)",
+  "license": "GPL-2.0",
+  "bin": {
+    "bonjour": "bin/bonjour.js"
+  },
+  "dependencies": {
+    "node-dns-sd": "*"
+  },
+  "author": {
+    "name":  "Warren R. Bank",
+    "email": "warren.r.bank@gmail.com",
+    "url":   "https://github.com/warren-bank"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warren-bank/node-dns-sd-cli"
+  }
+}
