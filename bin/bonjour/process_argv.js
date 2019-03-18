@@ -6,6 +6,7 @@ const fs   = require('fs')
 const argv_flags = {
   "--help":           {bool: true},
   "--version":        {bool: true},
+  "--verbose":        {bool: true},
 
   "--services":       {bool: true},  // --discover '_services._dns-sd._udp.local'
   "--printers":       {bool: true},  // --discover '_printer._tcp.local'
@@ -17,7 +18,8 @@ const argv_flags = {
 
 const argv_flag_aliases = {
   "--help":           ["-h"],
-  "--version":        ["-v"],
+  "--version":        ["-V"],
+  "--verbose":        ["-v"],
   "--services":       ["-s"],
   "--printers":       ["-p"],
   "--chromecast":     ["-c"],

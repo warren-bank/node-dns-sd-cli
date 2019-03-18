@@ -9,9 +9,13 @@ options:
 "--help"
     Print all command-line options.
 
-"-v"
+"-V"
 "--version"
     Print version number.
+
+"-v"
+"--verbose"
+    Print unfiltered discovery results.
 
 "-s"
 "--services"

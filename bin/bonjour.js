@@ -17,10 +17,24 @@ const start_monitor = function() {
 
 const run_discovery = function(params) {
   mDnsSd.discover(params).then((device_list) => {
+    filter_device_list(device_list)
     console.log(JSON.stringify(device_list, null, 2))
   }).catch((error) => {
     console.error(error)
   })
+}
+
+const filter_device_list = function(device_list) {
+  if (argv_vals["--verbose"])
+    return
+
+  for (const device of device_list) {
+    delete device.packet
+    for (const key in device) {
+      if (device[key] === null)
+        delete device[key]
+    }
+  }
 }
 
 if (argv_vals["--monitor"]) {
