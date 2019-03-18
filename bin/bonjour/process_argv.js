@@ -7,7 +7,7 @@ const argv_flags = {
   "--help":           {bool: true},
   "--version":        {bool: true},
 
-  "--services":       {bool: true},  // --discover '_services._dns-sd._udp.local.'
+  "--services":       {bool: true},  // --discover '_services._dns-sd._udp.local'
   "--printers":       {bool: true},  // --discover '_printer._tcp.local'
   "--chromecast":     {bool: true},  // --discover '_googlecast._tcp.local'
 
