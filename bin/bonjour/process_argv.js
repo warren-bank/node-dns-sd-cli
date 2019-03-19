@@ -1,8 +1,5 @@
 const grep_argv = require('./grep_argv')
 
-const path = require('path')
-const fs   = require('fs')
-
 const argv_flags = {
   "--help":           {bool: true},
   "--version":        {bool: true},
@@ -46,7 +43,7 @@ const get_merged_argv_flags = function(){
 }
 
 const normalize_argv_vals = function(){
-  if (! argv_vals instanceof Object) return
+  if (!(argv_vals instanceof Object)) return
 
   let key, argv_val, aliases, alias
 
@@ -112,7 +109,8 @@ if (!argv_vals["--monitor"]) {
   }
   if (argv_vals["--printers"]) {
     argv_vals["--discover"].name = '_printer._tcp.local'
-  }  if (argv_vals["--chromecast"]) {
+  }
+  if (argv_vals["--chromecast"]) {
     argv_vals["--discover"].name = '_googlecast._tcp.local'
   }
 }

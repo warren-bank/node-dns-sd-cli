@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/node-dns-sd-cli",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "",
   "description": "Bonjour (DNS-SD) discovery/monitor command line tool.",
   "author": "Warren Bank (https://github.com/warren-bank)",
